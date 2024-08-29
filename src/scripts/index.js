@@ -25,7 +25,7 @@ function fetchWeatherData(url) {
 			.catch((error) => reject(error));
 	});
 }
-/* 
+
 function requiredWeatherData() {
 	return fetchWeatherData(address).then((data) => {
 		return {
@@ -42,4 +42,3 @@ requiredWeatherData()
 	.catch((error) => {
 		console.error(`Error fetching weather data: ${error}`);
 	});
- */
