@@ -3,22 +3,25 @@ body {
 	font-family: Arial, sans-serif;
 	background-image: url("../assets/images/bg4.jpg");
 	background-position: center;
-	background-repeat: no-repeat;
+	background-repeat: repeat-x;
 	background-attachment: scroll;
 	height: 100vh;
 	color: #fff;
+	padding: 50px 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
 }
 .search-container {
 	display: flex;
 	justify-content: center;
-	gap: 2px;
 }
 .search-container > .search-bar {
 	width: 35vw;
-	height: 50px;
+	height: 40px;
 	border: 1px solid #c9bdbd;
 	background: none;
-	border-radius: 25px 0 0 25px;
+	border-radius: 20px 0 0 20px;
 	color: #f0f0f0;
 	padding: 5px 15px;
 }
@@ -28,8 +31,8 @@ body {
 .search-container > .search-btn {
 	background: none;
 	border: none;
-	width: 60px;
-	border-radius: 0 25px 25px 0;
+	width: 80px;
+	border-radius: 0 20px 20px 0;
 	border-right: 1px solid #c9bdbd;
 	border-top: 1px solid #c9bdbd;
 	border-bottom: 1px solid #c9bdbd;
