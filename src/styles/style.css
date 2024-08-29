@@ -1,4 +1,45 @@
 body {
 	background-color: #f0f0f0;
 	font-family: Arial, sans-serif;
+	background-image: url("../assets/images/bg4.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	height: 100vh;
+	color: #fff;
+}
+.weather-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+}
+.icon {
+	padding: 10px 20px;
+}
+.material-symbols-outlined {
+	font-size: calc(6rem + 10vw);
+	color: #f3eded;
+}
+.temperature p {
+	font-size: calc(4rem + 4vw);
+	font-family: dancing;
+	padding: 5px 5px;
+	display: flex;
+	justify-content: center;
+	border-bottom: 2px solid #797777;
+}
+.location-time {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+	height: 50px;
+}
+.location-icon {
+	font-size: 1rem;
+}
+.location {
+	display: flex;
+	align-items: center;
+	gap: 4px;
 }
