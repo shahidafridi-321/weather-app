@@ -3,11 +3,10 @@ import "../styles/reset.css";
 import "../styles/style.css";
 
 import { getLocation } from "./getNewLocation";
-import { generateHTML } from "./DOMController";
+import { displayWeather } from "./DOMController";
 
-generateHTML();
-
+displayWeather();
 
 document.querySelector(".search-btn").addEventListener("click", () => {
-	generateHTML(getLocation());
+	displayWeather(getLocation());
 });

@@ -1,6 +1,7 @@
 import { requiredWeatherData } from "./required-weather-data";
+import { fahrenheitToCelsius } from "./temperatureConversion";
 
-export function generateHTML(location = "london") {
+export function displayWeather(location = "london") {
 	let mainContentContainer = document.querySelector(".main-content-container");
 	mainContentContainer.innerHTML = "";
 	document.querySelector(".description").innerHTML = "";
@@ -24,14 +25,11 @@ function generateWeatherCard(data) {
 			</span>
 		</div>
 		<div class="temperature">
-			<p class="temp">${((data.currentConditions.temperature - 32) * (5 / 9)).toFixed(
-				0
-			)}°c
+			<p class="temp">${fahrenheitToCelsius(data.currentConditions.temperature)}°c
 			</p>
-			<p class="feels-like">Feels Like ${(
-				(data.currentConditions.feelslike - 32) *
-				(5 / 9)
-			).toFixed(0)}°c
+			<p class="feels-like">Feels Like ${fahrenheitToCelsius(
+				data.currentConditions.feelslike
+			)}°c
 			</p>
 		</div>
 		<div class="location-time">
