@@ -2,9 +2,9 @@ import "normalize.css";
 import "../styles/reset.css";
 import "../styles/style.css";
 
-let city = "peshawar";
+let location = "london";
 let apiKey = "JXY5BP8S4JSLUGDSRP6793223";
-let address = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${city}?key=${apiKey}`;
+let address = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${location}?key=${apiKey}`;
 
 function fetchWeatherData(url) {
 	return fetch(url).then((response) => {
@@ -44,13 +44,16 @@ function generateHTML() {
 	let mainContentContainer = document.querySelector(".main-content-container");
 	mainContentContainer.innerHTML = "";
 
+	document.querySelector(".description").innerHTML = "";
+
 	let weatherCard = document.createElement("div");
 	weatherCard.classList.add("weather-card");
 
 	let weatherDetails = document.createElement("div");
 	weatherDetails.classList.add("weather-details");
-	requiredWeatherData().then((data) => {
-		weatherCard.innerHTML = `
+	requiredWeatherData()
+		.then((data) => {
+			weatherCard.innerHTML = `
 		<div class="icon">
 			<span class="material-symbols-outlined conditions">
 					partly_cloudy_day
@@ -77,7 +80,7 @@ function generateHTML() {
 			<p class="time">${data.currentConditions.datetime}</p>
 		</div>
 		`;
-		weatherDetails.innerHTML = `
+			weatherDetails.innerHTML = `
 			<p class="weather-detials-item 		   	  preciption">Chance of Rain: ${data.currentConditions.precipprob}%
 			</p>
 			<p class="weather-detials-item humidity">Humidity ${data.currentConditions.humidity}%
@@ -89,12 +92,27 @@ function generateHTML() {
 			<p class="weather-detials-item sunset">Sunset ${data.currentConditions.sunset}
 			</p>
 		`;
-		mainContentContainer.appendChild(weatherCard);
-		mainContentContainer.appendChild(weatherDetails);
-		document.querySelector(
-			".description"
-		).innerHTML = `<p>${data.description}</p>`;
-	});
+			mainContentContainer.appendChild(weatherCard);
+			mainContentContainer.appendChild(weatherDetails);
+			document.querySelector(
+				".description"
+			).innerHTML = `<p>${data.description}</p>`;
+		})
+		.catch((error) => console.error(error));
 }
 
 generateHTML();
+
+function getLocation() {
+	location = document.querySelector(".search-bar").value;
+	if (location === "") {
+		location = "london";
+	}
+	address = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${location}?key=${apiKey}`;
+	document.querySelector(".search-bar").value = "";
+}
+
+document.querySelector(".search-btn").addEventListener("click", () => {
+	getLocation();
+	generateHTML();
+});
