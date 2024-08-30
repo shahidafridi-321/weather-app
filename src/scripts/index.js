@@ -42,3 +42,10 @@ function requiredWeatherData() {
 		console.error(`Error fetching weather data: ${error}`);
 	});
  */
+
+function generateHTML() {
+	let mainContentContainer = document.querySelector('.main-content-container');
+	requiredWeatherData().then((data) => {
+
+	});
+}
