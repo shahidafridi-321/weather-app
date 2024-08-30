@@ -80,7 +80,7 @@ function generateHTML() {
 		weatherDetails.innerHTML = `
 			<p class="weather-detials-item 		   	  preciption">Chance of Rain: ${data.currentConditions.precipprob}%
 			</p>
-			<p class="weather-detials-item humidity">Humidity ${data.currentConditions.humidity}
+			<p class="weather-detials-item humidity">Humidity ${data.currentConditions.humidity}%
 			</p>
 			<p class="weather-detials-item wind">Wind ${data.currentConditions.wind} km/h
 			</p>

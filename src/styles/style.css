@@ -7,7 +7,7 @@ body {
 	background-attachment: scroll;
 	height: 100vh;
 	color: #fff;
-	padding: 50px 20px;
+	padding: 30px 20px;
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
