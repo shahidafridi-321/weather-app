@@ -115,3 +115,6 @@ body {
 .location-time > .time {
 	font-size: 1.6rem;
 }
+.description {
+	text-align: center;
+}
