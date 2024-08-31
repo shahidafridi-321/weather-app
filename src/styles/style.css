@@ -50,6 +50,12 @@ body {
 }
 .main-content {
 	flex: 2;
+	text-align: center;
+	line-height: 1.5;
+}
+.main-content > h2 {
+	font-size: 2rem;
+	color: darkred;
 }
 .main-content-container {
 	display: flex;

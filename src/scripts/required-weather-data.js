@@ -1,4 +1,6 @@
 import { fetchWeatherData } from "./fetch-weather-data.js";
+import { errorHandler } from "./DOMController.js";
+import { getLocation } from "./getNewLocation.js";
 
 /* export function requiredWeatherData(location) {
 	let apiKey = "QC3XC9RCAZP8JNSJGLCVFBUDR";
@@ -34,7 +36,7 @@ export async function requiredWeatherData(location) {
 	try {
 		let data = await fetchWeatherData(address);
 		if (!data) {
-			throw new Error("Failed To Get data");
+			throw new Error(`Failed to retrieve weather data from the API`);
 		}
 		return {
 			description: data.days[0].description,
@@ -54,6 +56,6 @@ export async function requiredWeatherData(location) {
 			},
 		};
 	} catch (error) {
-		console.log(error);
+		errorHandler(error);
 	}
 }

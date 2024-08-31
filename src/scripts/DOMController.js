@@ -16,14 +16,11 @@ export async function displayWeather(location = "london") {
 			generateDescription(data);
 		})
 		.catch((error) => console.error(error)); */
-	try {
-		let data = await requiredWeatherData(location);
-		mainContentContainer.appendChild(generateWeatherCard(data));
-		mainContentContainer.appendChild(generateWeatherDetails(data));
-		generateDescription(data);
-	} catch (error) {
-		console.log(error);
-	}
+
+	let data = await requiredWeatherData(location);
+	mainContentContainer.appendChild(generateWeatherCard(data));
+	mainContentContainer.appendChild(generateWeatherDetails(data));
+	generateDescription(data);
 }
 
 // Creates a weather card element displaying key weather conditions like temperature, icon, and location
@@ -84,4 +81,14 @@ function generateDescription(data) {
 	document.querySelector(
 		".description"
 	).innerHTML = `<p>${data.description}</p>`;
+}
+
+// displays messages when fail to retrieve data from API
+export function errorHandler(error) {
+	let mainContent = document.querySelector(".main-content");
+	mainContent.innerHTML = `
+		<h2>Sorry,SomeThing went wrong</h2>
+		<p>please check your internet connection and try again</p>
+		<p>${error}</p>
+		`;
 }
