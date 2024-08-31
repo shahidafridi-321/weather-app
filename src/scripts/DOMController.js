@@ -20,7 +20,7 @@ function generateWeatherCard(data) {
 	let weatherCard = document.createElement("div");
 	weatherCard.classList.add("weather-card");
 	weatherCard.innerHTML = `
-		<div class="icon">
+		<div class="icon-container">
 			<img src="${
 				icons[data.currentConditions.icon] || icons["default-icon"]
 			}" alt="${data.currentConditions.conditions}" class="icon">
