@@ -2,18 +2,26 @@ import { requiredWeatherData } from "./required-weather-data";
 import { fahrenheitToCelsius } from "./temperatureConversion";
 import { icons } from "./icons";
 
-export function displayWeather(location = "london") {
+export async function displayWeather(location = "london") {
 	let mainContentContainer = document.querySelector(".main-content-container");
 	mainContentContainer.innerHTML = "";
 	document.querySelector(".description").innerHTML = "";
 
-	requiredWeatherData(location)
+	/* requiredWeatherData(location)
 		.then((data) => {
 			mainContentContainer.appendChild(generateWeatherCard(data));
 			mainContentContainer.appendChild(generateWeatherDetails(data));
 			generateDescription(data);
 		})
-		.catch((error) => console.error(error));
+		.catch((error) => console.error(error)); */
+	try {
+		let data = await requiredWeatherData(location);
+		mainContentContainer.appendChild(generateWeatherCard(data));
+		mainContentContainer.appendChild(generateWeatherDetails(data));
+		generateDescription(data);
+	} catch (error) {
+		console.log(error);
+	}
 }
 
 function generateWeatherCard(data) {
