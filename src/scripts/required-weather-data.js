@@ -25,6 +25,8 @@ import { fetchWeatherData } from "./fetch-weather-data.js";
 	});
 } */
 
+// Fetches weather data from the Visual Crossing API for the specified location and returns an object with key weather details
+
 export async function requiredWeatherData(location) {
 	let apiKey = "QC3XC9RCAZP8JNSJGLCVFBUDR";
 	let address = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${location}?key=${apiKey}`;

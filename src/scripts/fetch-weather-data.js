@@ -9,6 +9,9 @@
 	});
 }
  */
+
+// Fetches weather data from the provided API URL and returns the JSON response
+
 export async function fetchWeatherData(url) {
 	let response = await fetch(url);
 	if (!response.ok) {

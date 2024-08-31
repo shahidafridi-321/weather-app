@@ -2,6 +2,8 @@ import { requiredWeatherData } from "./required-weather-data";
 import { fahrenheitToCelsius } from "./temperatureConversion";
 import { icons } from "./icons";
 
+// Fetches and displays weather data for the specified location (default: London)
+
 export async function displayWeather(location = "london") {
 	let mainContentContainer = document.querySelector(".main-content-container");
 	mainContentContainer.innerHTML = "";
@@ -23,6 +25,8 @@ export async function displayWeather(location = "london") {
 		console.log(error);
 	}
 }
+
+// Creates a weather card element displaying key weather conditions like temperature, icon, and location
 
 function generateWeatherCard(data) {
 	let weatherCard = document.createElement("div");
@@ -53,6 +57,7 @@ function generateWeatherCard(data) {
 		`;
 	return weatherCard;
 }
+// Creates and returns an element showing detailed weather conditions such as precipitation, humidity, wind speed, sunrise, and sunset
 
 function generateWeatherDetails(data) {
 	let weatherDetails = document.createElement("div");
@@ -72,6 +77,8 @@ function generateWeatherDetails(data) {
 		`;
 	return weatherDetails;
 }
+
+// Updates the weather description section on the UI
 
 function generateDescription(data) {
 	document.querySelector(
