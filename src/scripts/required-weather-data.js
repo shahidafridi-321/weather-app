@@ -5,6 +5,8 @@ export function requiredWeatherData(location) {
 	let address = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${location}?key=${apiKey}`;
 
 	return fetchWeatherData(address).then((data) => {
+		console.log(data);
+
 		return {
 			description: data.days[0].description,
 			address: data.address,
@@ -12,7 +14,8 @@ export function requiredWeatherData(location) {
 			currentConditions: {
 				temperature: data.currentConditions.temp,
 				feelslike: data.currentConditions.feelslike,
-				conditions: data.currentConditions.conditions,
+				icon: data.currentConditions.icon,
+				conditions:data.currentConditions.conditions,
 				humidity: data.currentConditions.humidity,
 				sunrise: data.currentConditions.sunrise,
 				sunset: data.currentConditions.sunset,

@@ -1,5 +1,6 @@
 import { requiredWeatherData } from "./required-weather-data";
 import { fahrenheitToCelsius } from "./temperatureConversion";
+import { icons } from "./icons";
 
 export function displayWeather(location = "london") {
 	let mainContentContainer = document.querySelector(".main-content-container");
@@ -20,9 +21,9 @@ function generateWeatherCard(data) {
 	weatherCard.classList.add("weather-card");
 	weatherCard.innerHTML = `
 		<div class="icon">
-			<span class="material-symbols-outlined conditions">
-					partly_cloudy_day
-			</span>
+			<img src="${
+				icons[data.currentConditions.icon] || icons["default-icon"]
+			}" alt="${data.currentConditions.conditions}" class="icon">
 		</div>
 		<div class="temperature">
 			<p class="temp">${fahrenheitToCelsius(data.currentConditions.temperature)}°c
