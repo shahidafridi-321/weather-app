@@ -1,14 +1,24 @@
 // Object mapping weather conditions to corresponding icon file paths
 
+import clearDay from "../assets/icons/clear-day.svg";
+import clearNight from "../assets/icons/clear-night.svg";
+import cloudy from "../assets/icons/cloudy.svg";
+import fog from "../assets/icons/fog.svg";
+import partlyCloudyDay from "../assets/icons/partly-cloudy-day.svg";
+import partlyCloudyNight from "../assets/icons/partly-cloudy-night.svg";
+import rain from "../assets/icons/rain.svg";
+import snow from "../assets/icons/snow.svg";
+import wind from "../assets/icons/wind.svg";
+
 export let icons = {
-	snow: "../src/assets/icons/snow.svg",
-	rain: "../src/assets/icons/rain.svg",
-	fog: "../src/assets/icons/fog.svg",
-	wind: "../src/assets/icons/wind.svg",
-	cloudy: "../src/assets/icons/cloudy.svg",
-	"partly-cloudy-day": "../src/assets/icons/partly-cloudy-day.svg",
-	"partly-cloudy-night": "../src/assets/icons/partly-cloudy-night.svg",
-	"clear-day": "../src/assets/icons/clear-day.svg",
-	"clear-night": "../src/assets/icons/clear-night.svg",
-	"default-icon": "../src/assets/icons/clear-day.svg",
+	snow,
+	rain,
+	fog,
+	wind,
+	cloudy,
+	"partly-cloudy-day": partlyCloudyDay,
+	"partly-cloudy-night": partlyCloudyNight,
+	"clear-day": clearDay,
+	"clear-night": clearNight,
+	"default-icon": clearDay,
 };

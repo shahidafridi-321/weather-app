@@ -46,7 +46,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   icons: () => (/* binding */ icons)\n/* harmony export */ });\n// Object mapping weather conditions to corresponding icon file paths\n\nvar icons = {\n  snow: \"../src/assets/icons/snow.svg\",\n  rain: \"../src/assets/icons/rain.svg\",\n  fog: \"../src/assets/icons/fog.svg\",\n  wind: \"../src/assets/icons/wind.svg\",\n  cloudy: \"../src/assets/icons/cloudy.svg\",\n  \"partly-cloudy-day\": \"../src/assets/icons/partly-cloudy-day.svg\",\n  \"partly-cloudy-night\": \"../src/assets/icons/partly-cloudy-night.svg\",\n  \"clear-day\": \"../src/assets/icons/clear-day.svg\",\n  \"clear-night\": \"../src/assets/icons/clear-night.svg\",\n  \"default-icon\": \"../src/assets/icons/clear-day.svg\"\n};//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvc2NyaXB0cy9pY29ucy5qcyIsIm1hcHBpbmdzIjoiOzs7O0FBQUE7O0FBRU8sSUFBSUEsS0FBSyxHQUFHO0VBQ2xCQyxJQUFJLEVBQUUsOEJBQThCO0VBQ3BDQyxJQUFJLEVBQUUsOEJBQThCO0VBQ3BDQyxHQUFHLEVBQUUsNkJBQTZCO0VBQ2xDQyxJQUFJLEVBQUUsOEJBQThCO0VBQ3BDQyxNQUFNLEVBQUUsZ0NBQWdDO0VBQ3hDLG1CQUFtQixFQUFFLDJDQUEyQztFQUNoRSxxQkFBcUIsRUFBRSw2Q0FBNkM7RUFDcEUsV0FBVyxFQUFFLG1DQUFtQztFQUNoRCxhQUFhLEVBQUUscUNBQXFDO0VBQ3BELGNBQWMsRUFBRTtBQUNqQixDQUFDIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vd2VicGFjay10ZW1wbGF0ZS8uL3NyYy9zY3JpcHRzL2ljb25zLmpzPzczZTIiXSwic291cmNlc0NvbnRlbnQiOlsiLy8gT2JqZWN0IG1hcHBpbmcgd2VhdGhlciBjb25kaXRpb25zIHRvIGNvcnJlc3BvbmRpbmcgaWNvbiBmaWxlIHBhdGhzXG5cbmV4cG9ydCBsZXQgaWNvbnMgPSB7XG5cdHNub3c6IFwiLi4vc3JjL2Fzc2V0cy9pY29ucy9zbm93LnN2Z1wiLFxuXHRyYWluOiBcIi4uL3NyYy9hc3NldHMvaWNvbnMvcmFpbi5zdmdcIixcblx0Zm9nOiBcIi4uL3NyYy9hc3NldHMvaWNvbnMvZm9nLnN2Z1wiLFxuXHR3aW5kOiBcIi4uL3NyYy9hc3NldHMvaWNvbnMvd2luZC5zdmdcIixcblx0Y2xvdWR5OiBcIi4uL3NyYy9hc3NldHMvaWNvbnMvY2xvdWR5LnN2Z1wiLFxuXHRcInBhcnRseS1jbG91ZHktZGF5XCI6IFwiLi4vc3JjL2Fzc2V0cy9pY29ucy9wYXJ0bHktY2xvdWR5LWRheS5zdmdcIixcblx0XCJwYXJ0bHktY2xvdWR5LW5pZ2h0XCI6IFwiLi4vc3JjL2Fzc2V0cy9pY29ucy9wYXJ0bHktY2xvdWR5LW5pZ2h0LnN2Z1wiLFxuXHRcImNsZWFyLWRheVwiOiBcIi4uL3NyYy9hc3NldHMvaWNvbnMvY2xlYXItZGF5LnN2Z1wiLFxuXHRcImNsZWFyLW5pZ2h0XCI6IFwiLi4vc3JjL2Fzc2V0cy9pY29ucy9jbGVhci1uaWdodC5zdmdcIixcblx0XCJkZWZhdWx0LWljb25cIjogXCIuLi9zcmMvYXNzZXRzL2ljb25zL2NsZWFyLWRheS5zdmdcIixcbn07XG4iXSwibmFtZXMiOlsiaWNvbnMiLCJzbm93IiwicmFpbiIsImZvZyIsIndpbmQiLCJjbG91ZHkiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/scripts/icons.js\n");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   icons: () => (/* binding */ icons)\n/* harmony export */ });\n/* harmony import */ var _assets_icons_clear_day_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../assets/icons/clear-day.svg */ \"./src/assets/icons/clear-day.svg\");\n/* harmony import */ var _assets_icons_clear_night_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../assets/icons/clear-night.svg */ \"./src/assets/icons/clear-night.svg\");\n/* harmony import */ var _assets_icons_cloudy_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../assets/icons/cloudy.svg */ \"./src/assets/icons/cloudy.svg\");\n/* harmony import */ var _assets_icons_fog_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../assets/icons/fog.svg */ \"./src/assets/icons/fog.svg\");\n/* harmony import */ var _assets_icons_partly_cloudy_day_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../assets/icons/partly-cloudy-day.svg */ \"./src/assets/icons/partly-cloudy-day.svg\");\n/* harmony import */ var _assets_icons_partly_cloudy_night_svg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../assets/icons/partly-cloudy-night.svg */ \"./src/assets/icons/partly-cloudy-night.svg\");\n/* harmony import */ var _assets_icons_rain_svg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../assets/icons/rain.svg */ \"./src/assets/icons/rain.svg\");\n/* harmony import */ var _assets_icons_snow_svg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../assets/icons/snow.svg */ \"./src/assets/icons/snow.svg\");\n/* harmony import */ var _assets_icons_wind_svg__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../assets/icons/wind.svg */ \"./src/assets/icons/wind.svg\");\n// Object mapping weather conditions to corresponding icon file paths\n\n\n\n\n\n\n\n\n\n\nvar icons = {\n  snow: _assets_icons_snow_svg__WEBPACK_IMPORTED_MODULE_7__,\n  rain: _assets_icons_rain_svg__WEBPACK_IMPORTED_MODULE_6__,\n  fog: _assets_icons_fog_svg__WEBPACK_IMPORTED_MODULE_3__,\n  wind: _assets_icons_wind_svg__WEBPACK_IMPORTED_MODULE_8__,\n  cloudy: _assets_icons_cloudy_svg__WEBPACK_IMPORTED_MODULE_2__,\n  \"partly-cloudy-day\": _assets_icons_partly_cloudy_day_svg__WEBPACK_IMPORTED_MODULE_4__,\n  \"partly-cloudy-night\": _assets_icons_partly_cloudy_night_svg__WEBPACK_IMPORTED_MODULE_5__,\n  \"clear-day\": _assets_icons_clear_day_svg__WEBPACK_IMPORTED_MODULE_0__,\n  \"clear-night\": _assets_icons_clear_night_svg__WEBPACK_IMPORTED_MODULE_1__,\n  \"default-icon\": _assets_icons_clear_day_svg__WEBPACK_IMPORTED_MODULE_0__\n};//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvc2NyaXB0cy9pY29ucy5qcyIsIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7O0FBQUE7O0FBRXFEO0FBQ0k7QUFDVDtBQUNOO0FBQzBCO0FBQ0k7QUFDNUI7QUFDQTtBQUNBO0FBRXJDLElBQUlTLEtBQUssR0FBRztFQUNsQkYsSUFBSSxFQUFKQSxtREFBSTtFQUNKRCxJQUFJLEVBQUpBLG1EQUFJO0VBQ0pILEdBQUcsRUFBSEEsa0RBQUc7RUFDSEssSUFBSSxFQUFKQSxtREFBSTtFQUNKTixNQUFNLEVBQU5BLHFEQUFNO0VBQ04sbUJBQW1CLEVBQUVFLGdFQUFlO0VBQ3BDLHFCQUFxQixFQUFFQyxrRUFBaUI7RUFDeEMsV0FBVyxFQUFFTCx3REFBUTtFQUNyQixhQUFhLEVBQUVDLDBEQUFVO0VBQ3pCLGNBQWMsRUFBRUQsd0RBQVFBO0FBQ3pCLENBQUMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly93ZWJwYWNrLXRlbXBsYXRlLy4vc3JjL3NjcmlwdHMvaWNvbnMuanM/NzNlMiJdLCJzb3VyY2VzQ29udGVudCI6WyIvLyBPYmplY3QgbWFwcGluZyB3ZWF0aGVyIGNvbmRpdGlvbnMgdG8gY29ycmVzcG9uZGluZyBpY29uIGZpbGUgcGF0aHNcblxuaW1wb3J0IGNsZWFyRGF5IGZyb20gXCIuLi9hc3NldHMvaWNvbnMvY2xlYXItZGF5LnN2Z1wiO1xuaW1wb3J0IGNsZWFyTmlnaHQgZnJvbSBcIi4uL2Fzc2V0cy9pY29ucy9jbGVhci1uaWdodC5zdmdcIjtcbmltcG9ydCBjbG91ZHkgZnJvbSBcIi4uL2Fzc2V0cy9pY29ucy9jbG91ZHkuc3ZnXCI7XG5pbXBvcnQgZm9nIGZyb20gXCIuLi9hc3NldHMvaWNvbnMvZm9nLnN2Z1wiO1xuaW1wb3J0IHBhcnRseUNsb3VkeURheSBmcm9tIFwiLi4vYXNzZXRzL2ljb25zL3BhcnRseS1jbG91ZHktZGF5LnN2Z1wiO1xuaW1wb3J0IHBhcnRseUNsb3VkeU5pZ2h0IGZyb20gXCIuLi9hc3NldHMvaWNvbnMvcGFydGx5LWNsb3VkeS1uaWdodC5zdmdcIjtcbmltcG9ydCByYWluIGZyb20gXCIuLi9hc3NldHMvaWNvbnMvcmFpbi5zdmdcIjtcbmltcG9ydCBzbm93IGZyb20gXCIuLi9hc3NldHMvaWNvbnMvc25vdy5zdmdcIjtcbmltcG9ydCB3aW5kIGZyb20gXCIuLi9hc3NldHMvaWNvbnMvd2luZC5zdmdcIjtcblxuZXhwb3J0IGxldCBpY29ucyA9IHtcblx0c25vdyxcblx0cmFpbixcblx0Zm9nLFxuXHR3aW5kLFxuXHRjbG91ZHksXG5cdFwicGFydGx5LWNsb3VkeS1kYXlcIjogcGFydGx5Q2xvdWR5RGF5LFxuXHRcInBhcnRseS1jbG91ZHktbmlnaHRcIjogcGFydGx5Q2xvdWR5TmlnaHQsXG5cdFwiY2xlYXItZGF5XCI6IGNsZWFyRGF5LFxuXHRcImNsZWFyLW5pZ2h0XCI6IGNsZWFyTmlnaHQsXG5cdFwiZGVmYXVsdC1pY29uXCI6IGNsZWFyRGF5LFxufTtcbiJdLCJuYW1lcyI6WyJjbGVhckRheSIsImNsZWFyTmlnaHQiLCJjbG91ZHkiLCJmb2ciLCJwYXJ0bHlDbG91ZHlEYXkiLCJwYXJ0bHlDbG91ZHlOaWdodCIsInJhaW4iLCJzbm93Iiwid2luZCIsImljb25zIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./src/scripts/icons.js\n");
 
 /***/ }),
 
@@ -227,6 +227,96 @@ eval("\n\n/* istanbul ignore next  */\nfunction apply(styleElement, options, obj
 /***/ ((module) => {
 
 eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElement) {\n  if (styleElement.styleSheet) {\n    styleElement.styleSheet.cssText = css;\n  } else {\n    while (styleElement.firstChild) {\n      styleElement.removeChild(styleElement.firstChild);\n    }\n    styleElement.appendChild(document.createTextNode(css));\n  }\n}\nmodule.exports = styleTagTransform;//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9ub2RlX21vZHVsZXMvc3R5bGUtbG9hZGVyL2Rpc3QvcnVudGltZS9zdHlsZVRhZ1RyYW5zZm9ybS5qcyIsIm1hcHBpbmdzIjoiQUFBYTs7QUFFYjtBQUNBO0FBQ0E7QUFDQTtBQUNBLElBQUk7QUFDSjtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQSIsInNvdXJjZXMiOlsid2VicGFjazovL3dlYnBhY2stdGVtcGxhdGUvLi9ub2RlX21vZHVsZXMvc3R5bGUtbG9hZGVyL2Rpc3QvcnVudGltZS9zdHlsZVRhZ1RyYW5zZm9ybS5qcz8xZGRlIl0sInNvdXJjZXNDb250ZW50IjpbIlwidXNlIHN0cmljdFwiO1xuXG4vKiBpc3RhbmJ1bCBpZ25vcmUgbmV4dCAgKi9cbmZ1bmN0aW9uIHN0eWxlVGFnVHJhbnNmb3JtKGNzcywgc3R5bGVFbGVtZW50KSB7XG4gIGlmIChzdHlsZUVsZW1lbnQuc3R5bGVTaGVldCkge1xuICAgIHN0eWxlRWxlbWVudC5zdHlsZVNoZWV0LmNzc1RleHQgPSBjc3M7XG4gIH0gZWxzZSB7XG4gICAgd2hpbGUgKHN0eWxlRWxlbWVudC5maXJzdENoaWxkKSB7XG4gICAgICBzdHlsZUVsZW1lbnQucmVtb3ZlQ2hpbGQoc3R5bGVFbGVtZW50LmZpcnN0Q2hpbGQpO1xuICAgIH1cbiAgICBzdHlsZUVsZW1lbnQuYXBwZW5kQ2hpbGQoZG9jdW1lbnQuY3JlYXRlVGV4dE5vZGUoY3NzKSk7XG4gIH1cbn1cbm1vZHVsZS5leHBvcnRzID0gc3R5bGVUYWdUcmFuc2Zvcm07Il0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./node_modules/style-loader/dist/runtime/styleTagTransform.js\n");
+
+/***/ }),
+
+/***/ "./src/assets/icons/clear-day.svg":
+/*!****************************************!*\
+  !*** ./src/assets/icons/clear-day.svg ***!
+  \****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "assets/clear-day.svg";
+
+/***/ }),
+
+/***/ "./src/assets/icons/clear-night.svg":
+/*!******************************************!*\
+  !*** ./src/assets/icons/clear-night.svg ***!
+  \******************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "assets/clear-night.svg";
+
+/***/ }),
+
+/***/ "./src/assets/icons/cloudy.svg":
+/*!*************************************!*\
+  !*** ./src/assets/icons/cloudy.svg ***!
+  \*************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "assets/cloudy.svg";
+
+/***/ }),
+
+/***/ "./src/assets/icons/fog.svg":
+/*!**********************************!*\
+  !*** ./src/assets/icons/fog.svg ***!
+  \**********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "assets/fog.svg";
+
+/***/ }),
+
+/***/ "./src/assets/icons/partly-cloudy-day.svg":
+/*!************************************************!*\
+  !*** ./src/assets/icons/partly-cloudy-day.svg ***!
+  \************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "assets/partly-cloudy-day.svg";
+
+/***/ }),
+
+/***/ "./src/assets/icons/partly-cloudy-night.svg":
+/*!**************************************************!*\
+  !*** ./src/assets/icons/partly-cloudy-night.svg ***!
+  \**************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "assets/partly-cloudy-night.svg";
+
+/***/ }),
+
+/***/ "./src/assets/icons/rain.svg":
+/*!***********************************!*\
+  !*** ./src/assets/icons/rain.svg ***!
+  \***********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "assets/rain.svg";
+
+/***/ }),
+
+/***/ "./src/assets/icons/snow.svg":
+/*!***********************************!*\
+  !*** ./src/assets/icons/snow.svg ***!
+  \***********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "assets/snow.svg";
+
+/***/ }),
+
+/***/ "./src/assets/icons/wind.svg":
+/*!***********************************!*\
+  !*** ./src/assets/icons/wind.svg ***!
+  \***********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "assets/wind.svg";
 
 /***/ }),
 
