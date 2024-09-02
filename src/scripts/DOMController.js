@@ -5,22 +5,23 @@ import { icons } from "./icons";
 // Fetches and displays weather data for the specified location (default: London)
 
 export async function displayWeather(location = "london") {
-	let mainContentContainer = document.querySelector(".main-content-container");
-	mainContentContainer.innerHTML = "";
-	document.querySelector(".description").innerHTML = "";
+	try {
+		let mainContentContainer = document.querySelector(
+			".main-content-container"
+		);
+		let errorContainer = document.querySelector(".error-handling");
+		errorContainer.innerHTML = "";
+		document.querySelector(".description").innerHTML = "";
+		loadingComponent(mainContentContainer);
+		let data = await requiredWeatherData(location);
+		mainContentContainer.innerHTML = "";
 
-	/* requiredWeatherData(location)
-		.then((data) => {
-			mainContentContainer.appendChild(generateWeatherCard(data));
-			mainContentContainer.appendChild(generateWeatherDetails(data));
-			generateDescription(data);
-		})
-		.catch((error) => console.error(error)); */
-
-	let data = await requiredWeatherData(location);
-	mainContentContainer.appendChild(generateWeatherCard(data));
-	mainContentContainer.appendChild(generateWeatherDetails(data));
-	generateDescription(data);
+		mainContentContainer.appendChild(generateWeatherCard(data));
+		mainContentContainer.appendChild(generateWeatherDetails(data));
+		generateDescription(data);
+	} catch (error) {
+		errorHandler("make sure you have enter correct location");
+	}
 }
 
 // Creates a weather card element displaying key weather conditions like temperature, icon, and location
@@ -28,6 +29,7 @@ export async function displayWeather(location = "london") {
 function generateWeatherCard(data) {
 	let weatherCard = document.createElement("div");
 	weatherCard.classList.add("weather-card");
+
 	weatherCard.innerHTML = `
 		<div class="icon-container">
 			<img src="${
@@ -54,6 +56,7 @@ function generateWeatherCard(data) {
 		`;
 	return weatherCard;
 }
+
 // Creates and returns an element showing detailed weather conditions such as precipitation, humidity, wind speed, sunrise, and sunset
 
 function generateWeatherDetails(data) {
@@ -85,10 +88,21 @@ function generateDescription(data) {
 
 // displays messages when fail to retrieve data from API
 export function errorHandler(error) {
-	let mainContent = document.querySelector(".main-content");
+	let mainContent = document.querySelector(".error-handling");
+	mainContent.classList.add("error-message");
 	mainContent.innerHTML = `
 		<h2>Sorry,SomeThing went wrong</h2>
 		<p>please check your internet connection and try again</p>
 		<p>${error}</p>
 		`;
+}
+
+// shows laoding before data has been retrieved
+export function loadingComponent(container) {
+	container.innerHTML = `
+<div id="loading" class="loading-container">
+  <div class="spinner"></div>
+  <p>Loading...</p>
+</div>
+	`;
 }

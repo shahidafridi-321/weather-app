@@ -1,6 +1,5 @@
 import { fetchWeatherData } from "./fetch-weather-data.js";
 import { errorHandler } from "./DOMController.js";
-import { getLocation } from "./getNewLocation.js";
 
 /* export function requiredWeatherData(location) {
 	let apiKey = "QC3XC9RCAZP8JNSJGLCVFBUDR";

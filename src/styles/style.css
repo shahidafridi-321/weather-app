@@ -48,12 +48,8 @@ body {
 	font-size: 2rem;
 	margin-top: 5px;
 }
-.main-content {
-	flex: 2;
-	text-align: center;
-	line-height: 1.5;
-}
-.main-content > h2 {
+
+.error-message > h2 {
 	font-size: 2rem;
 	color: darkred;
 }
@@ -61,6 +57,12 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+.error-message {
+	display: grid;
+	flex: 2;
+	text-align: center;
+	line-height: 1.5;
 }
 .weather-card {
 	display: flex;
